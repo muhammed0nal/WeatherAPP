@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="nav">Weather  Dashboard</div>
+    <div class="content">
+      <div class="form-div">
+        <form id="form">
+          <label for="input">Enter a city name</label
+          ><input
+            id="input"
+            type="text"
+            placeholder="E.g. New York, London,Tokyo"
+          /><button id="btn-form">Search</button>
+          <p id="warning" style="color: red; display: none">
+            please fill in the field
+          </p>
+        </form>
+        <div class="separation"></div>
+        <div class="current-loc">
+          <button id="current-loc-btn">Use Current Location</button>
+        </div>
+      </div>
+
+      <div id="context" class="context">
+        <div class="context-top">
+          <div class="top-left">
+            <h4 class="city">------ (....-..-..)</h4>
+            <p class="left-temp">Temperature: ----°C</p>
+            <p class="left-wind">Wind: ---- KM/S</p>
+            <p class="left-humidity">Humidity: ----%</p>
+          </div>
+          <!-- <div class="top-right">
+            <img
+              class="top-img"
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            />
+            <p>Light Rain</p>
+          </div> -->
+        </div>
+        <div class="context-bottom">
+          <h2 class="four-days">5-Day Forecast</h2>
+          <div class="cntx-bttm-bottom">
+            <div class="one">
+              <p>(....-..-..)</p>
+              <!-- <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              /> -->
+              <p>Temp: ----°C</p>
+              <p>Wind: ---- M/S</p>
+              <p>Humidity: ----%</p>
+            </div>
+            <div class="two">
+              <p>(....-..-..)</p>
+              <!-- <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              /> -->
+              <p>Temp: ----°C</p>
+              <p>Wind: ---- M/S</p>
+              <p>Humidity: ----%</p>
+            </div>
+            <div class="three">
+              <p>(....-..-..)</p>
+              <!-- <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              /> -->
+              <p>Temp: ----°C</p>
+              <p>Wind: ---- M/S</p>
+              <p>Humidity: ----%</p>
+            </div>
+            <div class="four">
+              <p>(....-..-..)</p>
+              <!-- <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              /> -->
+              <p>Temp: ----°C</p>
+              <p>Wind: ---- M/S</p>
+              <p>Humidity: ----%</p>
+            </div>
+            <div class="five">
+              <p>(....-..-..)</p>
+              <!-- <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              /> -->
+              <p>Temp: ----°C</p>
+              <p>Wind: ---- M/S</p>
+              <p>Humidity: ----%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
